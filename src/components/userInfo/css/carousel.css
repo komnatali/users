@@ -1,0 +1,35 @@
+@keyframes carouselAnim {
+  from {
+    transform: translate(0, 0);
+  }
+  50% {
+    transform: translate(-95%, 0);
+  }
+  100% {
+    transform: translate(50%, 0);
+  }
+}
+
+
+.wrap-carousel {
+  width: 85%;
+  margin-bottom: 20px;
+  overflow: hidden;
+
+  border: 2px solid #395778;
+  border-radius: 10px;
+}
+
+.user-carousel {
+  display: flex;
+  width: fit-content;
+  margin: 10px auto;
+  overflow: hidden;
+
+  list-style: none;
+
+  animation: carouselAnim 10s infinite alternate linear;
+}
+.user-carousel:hover {
+  animation-play-state: paused;
+}

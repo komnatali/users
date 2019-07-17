@@ -1,0 +1,99 @@
+.user-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  font-family: "Poppins", sans-serif;
+}
+.user-container {
+  display: flex;
+  justify-content: space-around;
+  width: 1100px;
+  max-width: 1100px;
+}
+.fulluser-comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.full-user {
+  width: 500px;
+
+  border-radius: 15px 15px 0 0;
+}
+
+.user-page-header {
+  display: flex;
+  justify-content: space-between;
+  width: 1050px;
+}
+.user-page-header li {
+  margin-right: auto;
+}
+
+.back-button {
+  width: 108px;
+  height: 108px;
+
+  font-size: 1.2rem;
+  color: #395778;
+
+  background-color: transparent;
+  border: 2px solid #395778;
+  border-radius: 10px;
+  cursor: pointer;
+
+  transition: all 0.5s linear;
+}
+.back-button:hover {
+  color: #395778;
+
+  background-color: rgb(247, 233, 216);;
+}
+
+@media screen and (max-width: 1065px) {
+  .user-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  .user-page-header {
+    flex-direction: column;
+    width: 500px;
+  }
+  .back-button {
+    width: 500px;
+    height: 50px;
+    margin-bottom: 10px;
+  }
+  .wrap-carousel {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 500px) {
+  .user-page-header,
+  .wrap-carousel,
+  .full-user,
+  .back-button,
+  form {
+    width: 300px;
+    height: auto;
+  }
+  .user-comment-li {
+    width: 280px;
+  }
+  .form-area {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .form-area label {
+    margin-bottom: 5px;
+  }
+  form input,
+  form textarea {
+    width: 220px;
+  }
+  .submit-button {
+    align-self: auto;
+    width: 120px;
+  }
+}

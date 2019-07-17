@@ -1,0 +1,53 @@
+.users-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  padding: 0;
+
+  list-style: none;
+  list-style: none;
+}
+
+.users-list li {
+  margin-bottom: 20px;
+}
+.users-list li a {
+  color: #395778;
+  text-decoration: none;
+}
+
+.user {
+  display: flex;
+  width: 400px;
+  height: 80px;
+  overflow: hidden;
+
+  font-family: "Poppins", sans-serif;
+
+  background-color: antiquewhite;
+  border: 2px solid darksalmon;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.user-info {
+  padding-top: 5px;
+}
+
+.avatar {
+  margin-right: 30px;
+}
+.name-surname {
+  font-size: 1.4rem;
+}
+.position {
+  font-size: 1.2rem;
+
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 400px) {
+  .user {
+    width: 300px;
+  }
+}
